@@ -2,7 +2,7 @@ import requests
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def index(request):
+def home_page(request):
     # This is similar to ones we have done before. Instead of keeping
     # the HTML / template in a separate directory, we just reply with
     # the HTML embedded here.
@@ -21,7 +21,7 @@ def about_me(request):
         'name': 'Ash Ketchum',
         'pokemon': 'Pikachu',
     }
-    return render(request, 'about_me.html', context)
+    return render(request, 'About_Section.html', context)
 
 
 def github_api_example(request):
